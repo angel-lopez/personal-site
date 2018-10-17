@@ -1,0 +1,132 @@
+/******************************************************************************/
+/* GENERAL ********************************************************** GENERAL */
+/******************************************************************************/
+
+html
+{
+  background-color: rgb(255, 250, 242);
+  color: rgb(0, 10, 31);
+  font-family: 'Merriweather', serif;
+}
+
+body
+{
+  width: 600px;
+  margin: 0 auto;
+}
+
+main
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/******************************************************************************/
+/* NAV ****************************************************************** NAV */
+/******************************************************************************/
+
+nav
+{
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav div a
+{
+  /* background-color: lightgrey; */
+  display: inline-block;
+  color: grey;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 3px;
+  transition: background-color ease-out 250ms;
+}
+
+nav div a:hover
+{
+  background-color: rgba(180, 180, 180, 0.4);
+}
+
+nav div a:active
+{
+  transition: background-color 0s;
+  background-color: rgba(180, 180, 180, 0.9);
+}
+
+nav .name
+{
+  flex-grow: 1;
+}
+
+nav .name a
+{
+  font-size: 24px;
+}
+
+nav .page
+{
+  padding-top: 5px;
+}
+
+nav .page:not(:last-child)
+{
+  margin-right: 15px;
+}
+
+/******************************************************************************/
+/* PAPER ************************************************************** PAPER */
+/******************************************************************************/
+
+.paper .heading,
+.paper section h2
+{
+  text-align: center;
+}
+
+.paper .heading,
+.paper section:not(:last-child)
+{
+  margin-bottom: 40px;
+}
+
+.paper .title,
+.paper section h2
+{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.paper .title
+{
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.paper .author,
+.paper .timestamp
+{
+  font-style: italic;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.paper section h2
+{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.paper section p
+{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.paper section p:not(:last-child)
+{
+  margin-bottom: 20px;
+}
